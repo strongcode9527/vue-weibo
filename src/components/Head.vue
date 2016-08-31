@@ -32,7 +32,7 @@ body{
 }
 .header{
 	width:100%;
-	background:blue;
+	background:white;
 	height:2rem;
 	padding:0 2rem;
 	position:fixed;

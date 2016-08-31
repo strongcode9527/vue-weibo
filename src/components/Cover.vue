@@ -81,7 +81,7 @@
   	left:50%;
   	transform:translate(-50%,-50%);
   	text-align:center;
-		background:blue;
+		background:white;
 		border-radius:5px;
 	
   } 
@@ -93,7 +93,7 @@
   	left:50%;
   	transform:translate(-50%,-50%);
   	text-align:center;
-		background:rgba(255,246,143,0.7);
+		background:white;
 		border-radius:5px;
   }
   .login-button button{
@@ -102,7 +102,10 @@
   	border-radius:5px;
   	box-shadow:none;
   	color:white;
-  	border-radius:5px;
+  	border-radius:0.5rem;
+  	background:pink;
+  	outline:none;
+  	border:none;
 	}
 	.register-button button{
   	margin:0 1rem;
@@ -110,7 +113,10 @@
   	border-radius:5px;
   	box-shadow:none;
   	color:white;
-  	border-radius:5px;
+  	border-radius:0.5rem;
+  	background:pink;
+  	outline:none;
+  	border:none;
 	}
 	
 </style>

@@ -4,7 +4,7 @@
 	<div class="weibo-all">
 		<div class="submit-weibo">
 			<p class="restWordsNum">还能输入<strong>{{restWordsNum}}</strong></p>
-			<textarea class="sendWeiboContent" v-model="weiboContent">
+			<textarea class="sendWeiboContent" v-model="weiboContent" v-on:change="change" maxlength="140">
 			</textarea>
 		  <button class="sendWeiboButton" v-on:click="sendWeibo">发布</button>
 		</div>
@@ -108,7 +108,10 @@ export default{
 		sendWeibo:function(){
 
 			var this_ = this;
-		
+			if(this.weiboContent == ''){
+				alert("输入内容不能为空");
+				return ;
+			}
 			$.ajax({
 				url:"http://localhost:8090/sendWeibo",
 				type:"POST",
@@ -126,6 +129,10 @@ export default{
 				}
 			})
 		},
+		change:function(){
+			console.log("sefessf");
+			this.restWordsNum = 140 - this.restWordsNum;
+		}
 	}
 }
 </script>

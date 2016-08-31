@@ -32,7 +32,7 @@
 	padding:0.5rem 0.5rem 0 0.5rem;
 	box-sizing:border-box;
 	width:97%;
-	margin:1rem auto 0 auto;
+	margin:.3rem auto 0 auto;
 }
 
 .weibo-header img{
@@ -54,9 +54,11 @@
 .weibo-action img{
 	width:1rem;
 	height:1rem;
-	margin-right:0.3rem;
+  vertical-align:middle;
 }
-
+.weibo-action span{
+	vertical-align:middle;
+}
 .weibo-action + .weibo-action{
 	border-left:1px solid #ccc;
 }

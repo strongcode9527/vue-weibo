@@ -33,15 +33,24 @@
 		width:2rem;
 		height:2rem;
 	}
+
 	.comment-input{
 		border:1px solid yellow;
 		width:80%;
 		height:2rem;
 		margin-left:5%;
+		padding:0 1rem;
+		box-sizing:border-box;
 	}
 	.writeComment{
 		float:right;
 		margin-right:10%;
+		margin-top:.5rem;
+		background:#ffc09f;
+		padding:0.3rem 0.6rem;
+		border-radius:0.2rem;
+		color:white;
+		border:none;
 	}
 	.comments{
 		margin:1rem 0;
@@ -50,7 +59,7 @@
 	}
 	.comment{
 		list-style-type:none;
-		
+		font-size:0.8rem;
 		padding:0.2rem 0.2rem;
 	}
 	.comment-header-bar{
@@ -126,7 +135,7 @@
 		data:function(){
 			return {
 				comment_data:'',
-				reply_comment:'回复@' + this.user,
+				reply_comment:'回复@' + this.user + ": ",
 				showReply:false
 			}
 		},
